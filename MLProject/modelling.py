@@ -6,6 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
 df = pd.read_csv('WA_Fn-UseC_-Telco-Customer-Churn_preprocessed.csv')
+df = pd.read_csv('namadataset_preprocessing/WA_Fn-UseC_-Telco-Customer-Churn_preprocessed.csv')
 X = df.drop('Churn', axis=1)
 y = df['Churn']
 
