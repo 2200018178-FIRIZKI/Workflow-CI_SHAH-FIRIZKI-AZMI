@@ -5,7 +5,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
+
 df = pd.read_csv('namadataset_preprocessing/WA_Fn-UseC_-Telco-Customer-Churn_preprocessed.csv')
+# Drop kolom customerID jika ada
+if 'customerID' in df.columns:
+    df = df.drop('customerID', axis=1)
 X = df.drop('Churn', axis=1)
 y = df['Churn']
 
