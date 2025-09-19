@@ -1,1 +1,1 @@
-https://hub.docker.com/ (isi dengan tautan Docker Hub jika sudah tersedia sesuai instruksi advanced)
+https://hub.docker.com/r/shah089/model-mlflow
